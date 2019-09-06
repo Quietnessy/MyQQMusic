@@ -1,0 +1,110 @@
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul
+{
+	margin: 0;
+	padding: 0
+}
+/*声明图标字体*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?41gmew');
+  src:  url('../fonts/icomoon.eot?41gmew#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?41gmew') format('truetype'),
+    url('../fonts/icomoon.woff?41gmew') format('woff'),
+    url('../fonts/icomoon.svg?41gmew#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts2/icomoon.eot?41gmew');
+  src:  url('../fonts2/icomoon.eot?41gmew#iefix') format('embedded-opentype'),
+    url('../fonts2/icomoon.ttf?41gmew') format('truetype'),
+    url('../fonts2/icomoon.woff?41gmew') format('woff'),
+    url('../fonts2/icomoon.svg?41gmew#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*搜索按钮的图标字体*/
+.Sear button i{
+	font-family: 'icomoon';
+	font-style: normal;
+	color: #31c27c;
+	font-size: 25px;
+}
+/*中间固定的那一部分图标字体*/
+.popup_guide_btn i{
+  font-family: 'icomoon';
+  font-style: normal;
+  color: #fff;
+  font-size: 15px;
+  line-height: 26px;
+}
+.item i:hover{
+  font-family: 'icomoon';
+  font-style: normal;
+  color: #fff;
+  font-size: 40px;
+  transition: all 0.8s ease;
+}
+.btn_return{
+  font-family: 'icomoon';
+  font-style: normal;
+  font-size: 30px;
+  text-decoration: none;
+}
+.btn_return:hover{
+  text-decoration: none;
+  color: #31c27c;
+  transition: all 0.8s ease;
+}
+.btn_play{
+  font-family: 'icomoon';
+  font-style: normal;
+  text-decoration: none;
+}
+.btn_play:hover{
+  text-decoration: none;
+  color: #31c27c;
+  transition: all 0.8s ease;
+}
+
+
+/*底部字体图标*/
+.footer_download ul li a i{
+  font-family: 'icomoon';
+  font-style: normal;
+  text-decoration: none;
+}
+.footer_product ul li a i{
+  font-family: 'icomoon';
+  font-style: normal;
+  text-decoration: none;
+}
+a:hover{
+  transition: all 0.5s ease;
+}
+/*音乐播放区域样式开始*/
+/*.mysong_ctrl{
+  
+}*/
+.controf_music1,
+.controf_music2,
+.controf_music3,
+.controf_music4,
+.controf_music5,
+.controf_music6,
+.controf_music7,
+.controf_music8,
+.controf_music9,
+.controf_music10
+{
+  font-family: 'icomoon';
+  font-style: normal;
+  text-decoration: none;
+  font-size: 54px;
+  color: #999;
+}
+
+
+
+/*音乐播放样式结束*/

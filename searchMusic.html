@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- 添加title-->
+	<title>搜索 - QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！</title>
+	<!-- 引入图标 -->
+	<link rel="shutcut icon" type="image/x-icon" href="imge/icon.ico">	
+	<!-- 添加浏览器初始化样式 -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- 引入本页面样式 -->
+	<link rel="stylesheet" type="text/css" href="./css/serchMusic.css">
+	<!-- 引入bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- 引入jQuery -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<!-- 背景图片以及大块开始 -->
+	<div class="outBeijing">
+		<!-- 顶部S -->
+		<div class="topdiv">
+            QQ音乐,让生活充满音乐
+        </div>
+		<!-- 顶部E -->
+		<!-- 内部开始 -->
+		<div id="wrapper">
+    	<header>
+    		<button class="submit">搜索</button>
+    		<input type="text" class="search" placeholder="搜索音乐、MV、歌单、用户">
+    		<a href="index.html">回到首页></a>
+    	</header>
+    	<main>
+    	    <!-- 音乐展示页面 -->
+    		<section id="music-show">
+    		    <h1>新歌版</h1>
+		    	<ol class="music-list">
+		    		<li>
+		    		    <span class="song-name"></span>
+		    		    <span class="singer-name"></span>
+		    		    <span class="song-time"></span>
+		    		    <div class="controller">
+		    		    	<a href="#" class="pause controll"></a>
+		    		    </div>
+		    		</li>
+		    	</ol>
+		    </section>
+
+            <!-- 音乐类型导航 -->
+            <nav id="music-type">
+            	<h1>音乐分类</h1>
+            	<ul>
+            		<li><a href="#" data-type="1">新歌版</a></li>
+            		<li><a href="#" data-type="2">热歌版</a></li>
+            		<li><a href="#" data-type="11">摇滚版</a></li>
+            		<li><a href="#" data-type="12">爵士</a></li>
+            		<li><a href="#" data-type="16">流行</a></li>
+            		<li><a href="#" data-type="21">欧美金榜曲</a></li>
+            		<li><a href="#" data-type="22">经典老歌版</a></li>
+            		<li><a href="#" data-type="23">情歌对唱版</a></li>
+            		<li><a href="#" data-type="24">影视金曲版</a></li>
+            		<li><a href="#" data-type="25">网络歌曲版</a></li>
+            	</ul>
+            </nav>
+
+    	</main>
+
+    	<!-- 音乐播放 -->
+    	<audio id="play-audio">
+    		<source src="#" type="audio/mpeg"></source>
+    	</audio>
+    </div>
+		<!-- 内部结束 -->
+	</div>
+	<!-- 背景图片以及大块开始 -->
+	<script src="./js/serchMusic.js"></script>
+</body>
+</html>

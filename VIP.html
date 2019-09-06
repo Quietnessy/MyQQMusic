@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="QQ音乐豪华绿钻，尊享无损音质、豪华闪电图标、个性化装扮、付费音乐播放、付费音乐下载（300首/月）等尊贵特权" />
+	<meta name="keywords" content="绿钻,绿钻活动,绿钻官网,qq绿钻,豪华绿钻,绿钻豪华版,专属曲库,无损音乐,高品质音乐,免广告,弹幕气泡,个性主题,百变播放器,DTS音效,QQ音乐" />
+	<title>QQ音乐VIP官网|绿钻豪华版</title>
+	<!-- 引入logo -->
+	<link rel="shutcut icon" type="image/x-icon" href="imge/icon.ico">
+	<!-- 添加浏览器初始化样式 -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- 添加本页面样式 -->
+	<link rel="stylesheet" type="text/css" href="./css/VIP.css">
+	<!-- 引入bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- 头部黑色部分开始 -->
+	<div class="headofvip">
+
+		<!-- logo部分 S -->
+		<div class="nav_log">
+			<a href="#">
+				<img src="./imge/Greenlogo.png">
+			</a>
+		</div>
+		<!-- logo部分 E -->
+
+		<!-- 头部导航部分 S -->
+		<ul class="mod_nav">
+			<li class="nav_item"><a href="index.html" class="nav_item_link  nav_item_current">首页</a></li>
+			<li class="nav_item">
+				<a href="#" class="nav_item_link drop">特权与等级</a>
+				<ul class="nav_dropdown">
+					<li class="nav_dropdown_item"><a href="#" class="nav_dropdown_item_link">成长等级</a></li>
+					<li class="nav_dropdown_item"><a href="#" class="nav_dropdown_item_link">全部特权</a></li>
+				</ul>
+			</li>
+			<li class="nav_item"><a href="#" class="nav_item_link">最新活动</a></li>
+			<li class="nav_item"><a href="#" class="nav_item_link">年费专区</a></li>
+			<li class="nav_item"><a href="#" class="nav_item_link">付费音乐包</a></li>
+		</ul>
+
+		<!-- 登录按钮 S -->
+		<button type="button" class="mainpagenbtn_login" data-toggle="modal" data-target=".kell" title="登录">Login</button>
+		<div class="modal fade kell" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+  		<div class="modal-dialog" role="document">
+    	<div class="modal-content" style="width: 562px; height:412px; background-color: #fff;">
+      	<div class="modal-header" style="border: 0;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel">QQ音乐/QQ登录</h4>
+        <hr />
+      	</div>
+      	<div class="body_login">
+      	<div class="login_method">帐号密码登录</div>
+      	<div class="login_tuijian">推荐使用<a href="#">快速安全登录</a>,防止盗号。</div>
+      	<div class="inputOuter">
+      	<input type="text" placeholder="支持QQ号/邮箱/手机号登录" class="input_User" id="inputof_name" autofocus="autofocus">
+      	</div>
+      	<div class="inputOuter">
+      	<input type="password" placeholder="密码" class="input_pwd" id="inputof_pwd">
+      	</div>
+      	<div class="submit">
+      	<input type="submit" value="登 录" class="btn_sub" id="btnof_submit1" onclick="checkifright()">
+      	</div>
+      	<div class="bottom">
+      	<div class="low_login" title="为了确保你的信息安全，不建议在网吧等公共环境勾选此项">
+      	<a href="#">下次自动登录</a>
+      	</div>
+        <div class="forget">
+           <a href="#" class="foeget">忘了密码？</a>
+           <span class="dotted">|</span>
+           <a href="#" class="foeget">注册新账号</a>
+           <span class="dotted">|</span>
+           <a href="#" class="foeget">意见反馈</a>
+         </div>
+     	 </div>
+      	<div class="modal-footer">
+        <button type="button" class="btn_cancel" data-dismiss="modal">取 消</button>
+        <button type="button" class="btn_login" id="btnof_submit2" onclick="checkifright()">登 录</button>
+
+
+
+        <script>
+		function checkifright(){
+			var name = document.getElementById("inputof_name").value;
+			var passwd = document.getElementById("inputof_pwd").value;
+			if(name =='admin' && passwd =='123456')
+			{
+				alert('登录成功');
+				window.location.href='index.html'
+			}
+			else if(name=='' || passwd=='')
+			{
+				alert('用户名或密码不能为空！');
+				document.getElementById('inputof_pwd').value='';
+				document.getElementById('inputof_name').value='';
+				return false;
+			}
+			else if(name == 'admin'&& passwd !='123456')
+			{
+				alert('密码有误');
+				document.getElementById('inputof_pwd').value='';
+				return false;
+			}
+			else if(name != 'admin'&& passwd =='123456'){
+				alert('用户名有误');
+				document.getElementById('inputof_pwd').value='';
+				document.getElementById('inputof_name').value='';
+				return false;
+			}
+			else
+			{
+				alert('输入有误！');
+				document.getElementById('inputof_pwd').value='';
+				document.getElementById('inputof_name').value='';
+			}
+		}
+	</script>
+
+
+
+      	</div>
+    	</div><!-- /.modal-content -->
+ 		</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+		<!-- 注册按钮 E -->
+		<!-- 头部导航部分 E -->
+	</div>
+	</div>
+	
+	<!-- 头部黑色部分结束 -->
+
+	<!-- 中间部分 S -->
+	<div class="bannershow_1">
+		<div class="bannershow1_content">
+			<div class="bannershow1_content_tit">
+				<h2></h2>
+			</div>
+			<div class="bannershow1_content_con">
+				<p></p>
+			</div>
+			<a href="#" class="bannershow1_btnopenvip">
+				立即开通
+			</a>
+		</div>
+
+		<div class="bannershow1_nav"> 
+			<div class="bannershow1_nav_content">
+				<a href="#" class="bannershow1_nav_item itemnav1"><span></span></a>
+				<a href="#" class="bannershow1_nav_item itemnav2"><span></span></a>
+				<a href="#" class="bannershow1_nav_item itemnav3"><span></span></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 第二块 S  -->
+	<div class="bannershow_2">
+		<div class="feature_bg feature_bg1"></div>
+		<div class="feature_intro">
+			<div class="feature_content">
+				<h2 class="feature_title1">音乐，不将就</h2>
+				<div class="feature_con">
+					<p class="feature_text1">
+						对音乐的追求，从这里开始。付费歌曲畅享无阻，HQ高品质许你完美沉浸的听觉盛宴，SQ无损极致保留音乐的原生态，让耳朵捕捉音源现场的震撼。
+					</p>
+				</div>
+				<div class="ft_privi">
+					<ul class="ft_privi_list">
+						<li class="ft_privi_item">
+							<a href="#">
+								<span class="ft_priviicon_download"></span>
+								<span class="ft_privitxt">高品质下载</span>
+							</a>
+						</li>
+
+						<li class="ft_privi_item">
+							<a href="#">
+								<span class="ft_priviicon_SQdownload"></span>
+								<span class="ft_privitxt">无损音乐下载</span>
+							</a>
+						</li>
+
+						<li class="ft_privi_item">
+							<a href="#">
+								<span class="ft_priviicon_paydownload"></span>
+								<span class="ft_privitxt">付费音乐下载</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="featureitem_shap itemshap_1_1"></div>
+			<div class="featureitem_shap itemshap_1_2"></div>
+		</div>
+		<div class="featureitem_shap itemshap_1_3"></div>
+	</div>
+	<!-- 第二块 E -->
+
+	<!-- 第三块 S-->
+	<div class="bannershow_3">
+		<div class="feature_bg2"></div>
+		<div class="feature_intro">
+			<div class="feature_content">
+				<h2 class="feature_title2">爱豆，在一起</h2>
+				<div class="feature_con">
+					<p class="feature_text2">这里有定制的大咖主题，明星亲笔制作属于你的「歌词海报」，最前沿的艺人活动资讯及偶像亲密接触。音乐之旅，一路有爱豆陪伴身边。</p>
+				</div>
+				<div class="ft_privi">
+					<ul class="ft_privi_list">
+						<li class="ft_privi_item">
+							<a href="#">
+								<span class="ft_priviicon_styletheme"></span>
+								<span class="ft_privitxt">个性主题</span>
+							</a>
+						</li>
+
+						<li class="ft_privi_item">
+							<a href="#">
+								<span class="ft_priviicon_gecifont"></span>
+								<span class="ft_privitxt">歌词海报字体</span>
+							</a>
+						</li>
+
+						<li class="ft_privi_item">
+							<a href="#">
+								<span class="ft_priviicon_danmupop"></span>
+								<span class="ft_privitxt">个性弹幕气泡</span>
+							</a>
+						</li>
+
+						<li class="ft_privi_item">
+							<a href="#">
+								<span class="ft_priviicon_QQmusicshou"></span>
+								<span class="ft_privitxt">QQ音乐首唱会</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="featureitem_shap itemshap_2_1"></div>
+			<div class="featureitem_shap itemshap_2_2"></div>
+			<div class="featureitem_shap itemshap_2_3"></div>
+		</div>
+	</div>
+	<!-- 第三块 E -->
+
+	<!-- 第四块 S -->
+	<div class="bannershow_4">
+		<div class="feature_bg3"></div>
+		<div class="feature_intro">
+			<div class="feature_content">
+				<h2 class="feature_title3"></h2>
+				<div class="feature_con">
+					<p class="feature_text3">专属定制的闪电图标、付费音乐图标，集双重特权于一身，光彩夺目，等级成长加速，让你彰显不同。</p>
+				</div>
+				<div class="ft_privi">
+					<ul class="ft_privi_list">
+						<li class="ft_privi_item">
+							<a href="#">
+								<span class="ft_priviicon_flashSvip"></span>
+								<span class="ft_privitxt">闪电尊贵图标</span>
+							</a>
+						</li>
+
+						<li class="ft_privi_item">
+							<a href="#">
+								<span class="ft_priviicon_spaicon"></span>
+								<span class="ft_privitxt">付费音乐专属图标</span>
+							</a>
+						</li>
+
+						<li class="ft_privi_item">
+							<a href="#">
+								<span class="ft_priviicon_growspeed"></span>
+								<span class="ft_privitxt">成长速度</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="featureitem_shap itemshap_3_1"></div>
+			<div class="featureitem_shap itemshap_3_2"></div>
+		</div>
+		<div class="featureitem_shap itemshap_3_3"></div>
+	</div>
+
+	<!-- 第四块 E-->
+
+	<!-- 第五块 S -->
+	<div class="bannershow_5">
+		<div class="feature_bg4"></div>
+		<div class="feature_intro">
+			<div class="feature_content">
+				<h2 class="feature_title4"></h2>
+				<div class="feature_con">
+					<p class="feature_text4"></p>
+				</div>
+				<div class="ft_privi">
+					<ul class="ft_privi_list">
+						<li class="ft_privi_item">
+							<a href="#">
+								<span class="ft_priviicon_qqbgm"></span>
+								<span class="ft_privitxt">QQ空间背景音乐</span>
+							</a>
+						</li>
+
+						<li class="ft_privi_item">
+							<a href="#">
+								<span class="ft_priviicon_stylemusic"></span>
+								<span class="ft_privitxt">个性音乐</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="featureitem_shap itemshap_4_1"></div>
+			<div class="featureitem_shap itemshap_4_2"></div>
+		</div>
+		<div class="featureitem_shap itemshap_4_3"></div>
+		<div class="featureitem_shap itemshap_4_4"></div>
+	</div>	
+	<!-- 第五块 E -->
+
+	<!-- 中间部分 E -->
+	<!--主页右侧固定部分 S  -->
+	<div class="mod_contral">
+		<ul>
+			<li class="toolbar_item">
+				<a href="#" class="toolbar_icon toolbar_icon_qq">
+					<div class="tool_bar_qrcode">
+						<p>官方手Q公众号</p>
+						<img src="./imge2/qrcode_1.png" class="tool_bar__qr_pic">
+						<p class="tool_bar__qrcode_sp"> 
+							扫码免费领<br />
+							<span class="sp_txt">7天</span>
+							豪华绿钻
+						</p>
+					</div>
+				</a>
+			</li>
+
+			<li class="toolbar_item">
+				<a href="#" class="toolbar_icon toolbar_icon_wechat">
+					<div class="tool_bar_qrcode">
+						<p>官方微信公众号</p>
+						<img src="./imge2/qrcode_2.png" class="tool_bar__qr_pic">
+						<p>
+							扫码免费领<br />
+							<span>7天</span>
+							豪华绿钻
+						</p>
+					</div>
+				</a>
+			</li>
+
+			<li class="toolbar_item">
+				<a href="#" class="toolbar_icon toolbar_icon_buluo toobar3">
+					<div class="tool_bar_qrcode_mini">
+						<p>兴趣部落</p>
+					</div>
+				</a>
+			</li>
+
+			<li class="toolbar_item">
+				<a href="#" class="toolbar_icon toolbar_icon_exchange toobar4">
+					<div class="tool_bar_qrcode_mini">
+						<p>兑换中心</p>
+					</div>
+				</a>
+			</li>
+
+			<li class="toolbar_item">
+				<a href="#" class="toolbar_icon toolbar_icon_service toobar5">
+					<div class="tool_bar_qrcode_mini">
+						<p>客服中心</p>
+					</div>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+
+	<!--  主页右侧固定部分结束 E-->
+</body>
+</html>
